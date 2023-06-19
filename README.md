@@ -100,7 +100,14 @@ To integrate the algorithm into your own project, please ensure that your map da
     test(your_map, your_start_id, your_goal_id, your_actual_shortest_path, 
          your_X_LINES, your_Y_LINES, your_X_SCATTERS, your_Y_SCATTERS, your_MARKERS, True)
     ```
-   
+
+    <br/>
+
+    <p align='center'>
+      <img src="https://github.com/MaxineXiong/Google-Maps-Style-Route-Planner/assets/55864839/22b0df53-7ddf-48e4-8651-2a75423eb52a" width = "800">
+      <br><i>Example output of the `test` function</i>
+    </p>
+    
 <br/>
 
 ## **Contributing**
