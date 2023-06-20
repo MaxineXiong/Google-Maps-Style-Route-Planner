@@ -31,11 +31,11 @@ Google-Maps-Style-Route-Planner
 ```
 
 - **Google_Maps_Style_Route_Planner.ipynb**: This Jupyter Notebook serves as the primary file for the project. It contains the major functions responsible for displaying the map and calculating the shortest path. Users can import all the necessary functions from this notebook for their own use.
-- **maps.py**: The **`maps.py`** file stores the map data and is imported into the **`Google_Maps_Style_Route_Planner.ipynb`** notebook. It provides the underlying data structure and utilities required for map manipulation and path finding.
+- **maps.py**: This file stores the map data and is imported into the **Google_Maps_Style_Route_Planner.ipynb** notebook. It provides the underlying data structure and utilities required for map manipulation and path finding.
 - **README.md**: Provides an overview of this repository.
 - **LICENSE**: The license file for the project.
 
-Please note that the **`Google_Maps_Style_Route_Planner.ipynb`** notebook should be used as the main entry point for interacting with the project.
+Please note that the **Google_Maps_Style_Route_Planner.ipynb** notebook should be used as the main entry point for interacting with the project.
 
 <br/>
 
@@ -69,7 +69,7 @@ pip install ipynb
 
 To integrate the algorithm into your own project, please ensure that your map data has been transformed into the same format as **`maps.py`**. Then, follow the steps below:
 
-1. Import all functions from `Google_Maps_Style_Route_Planner.ipynb`:
+1. Import all functions from **Google_Maps_Style_Route_Planner.ipynb**:
     
     ```python
     from ipynb.fs.defs.Google_Maps_Style_Route_Planner import *
@@ -88,10 +88,10 @@ To integrate the algorithm into your own project, please ensure that your map da
     plt.show()
     ```
     
-4. Calculate the shortest path and distance between two intersections using the **`shortest_path`** function:
+4. Calculate the shortest path and distance between two intersections using the **`compute_shortest_path`** function:
     
     ```python
-    shortest_path, shortest_distance = shortest_path(your_map, start = your_start_id, goal = your_goal_id)
+    shortest_path, shortest_distance = compute_shortest_path(your_map, start = your_start_id, goal = your_goal_id)
     ```
     
 5. (Optional) Verify the algorithm's correctness and visualize the highlighted shortest path on the map by running the **`test`** function:
