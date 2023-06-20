@@ -69,7 +69,7 @@ pip install ipynb
 
 To integrate the algorithm into your own project, please ensure that your map data has been transformed into the same format as **`maps.py`**. Then, follow the steps below:
 
-1. Import the necessary modules:
+1. Import all functions from `Google_Maps_Style_Route_Planner.ipynb`:
     
     ```python
     from ipynb.fs.defs.Google_Maps_Style_Route_Planner import *
