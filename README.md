@@ -78,30 +78,43 @@ To integrate the algorithm into your own project, please ensure that your map da
 2. Create a map using the **`create_map`** function:
     
     ```python
-    your_map = create_map([your_X_LINES], [your_Y_LINES], [your_X_SCATTERS], [your_Y_SCATTERS], [your_MARKERS])
+    your_map = create_map([your_X_LINES], [your_Y_LINES], 
+                          [your_X_SCATTERS], [your_Y_SCATTERS],
+                          [your_MARKERS])
     ```
     
 3. (Optional) Plot the base map using the **`plot_map`** function:
     
     ```python
-    plot_map([your_X_LINES], [your_Y_LINES], [your_X_SCATTERS], [your_Y_SCATTERS], [your_MARKERS])
+    plot_map([your_X_LINES], [your_Y_LINES],
+             [your_X_SCATTERS], [your_Y_SCATTERS],
+             [your_MARKERS])
     plt.show()
     ```
     
 4. Calculate the shortest path and distance between two intersections using the **`compute_shortest_path`** function:
     
     ```python
-    shortest_path, shortest_distance = compute_shortest_path(map = your_map, start = [your_start_id], goal = [your_goal_id])
+    shortest_path, shortest_distance = compute_shortest_path(
+        map=your_map, start=[your_start_id], goal=[your_goal_id]
+    )
     ```
     
 5. (Optional) Verify the algorithm's correctness and visualize the highlighted shortest path on the map by running the **`test`** function:
     
     ```python
-    test(map = your_map, start = [your_start_id], goal = [your_goal_id], 
-         actual_shortest_path = [your_actual_shortest_path], 
-         x_lines = [your_X_LINES], y_lines = [your_Y_LINES],
-         x_scatters = [your_X_SCATTERS], y_scatters = [your_Y_SCATTERS], 
-         markers = [your_MARKERS], show_plot = True)
+    test(
+        map=your_map,
+        start=[your_start_id],
+        goal=[your_goal_id], 
+        actual_shortest_path=[your_actual_shortest_path], 
+        x_lines=[your_X_LINES],
+        y_lines=[your_Y_LINES],
+        x_scatters=[your_X_SCATTERS],
+        y_scatters=[your_Y_SCATTERS], 
+        markers=[your_MARKERS],
+        show_plot=True,
+    )
     ```
 
     <br/>
